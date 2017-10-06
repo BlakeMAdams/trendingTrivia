@@ -65,11 +65,15 @@ nav a {
   cursor: pointer;
   flex: 1;
 }
+nav a:focus {
+  background: rgb(218, 45, 123);
+}
+
 nav a:nth-child(1n+1) {
   border-left: .25px solid #eee;
 }
 nav a:hover {
-  opacity: .85;
+  background:#0FDCFF
 }
 article {
   width: 50%;
@@ -152,7 +156,7 @@ label, input[type="radio"], input[type="range"] {
   width: 100vw;
   background: rgba(88, 88, 88, 0.55);
   display: flex;
-  display: none; /* ALERTDELETEME - REMOVE THIS line only WHEN STYLING THE MODAL*/
+  
   justify-content: center;
   align-items: center;
 }
@@ -227,4 +231,26 @@ input[type="range"] {
 }
 .red {
   background: rgb(218, 45, 123);
+}
+.pageBtns {
+  display:flex;
+  justify-content: space-between;
+}
+.btn {
+  margin: 20px;
+  background: #01cef1;
+  border: none;
+  padding: .75rem;
+  font-size: 1.15rem;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.btn:hover {
+ background: #0FDCFF;
+  opacity: .85;
+}
+.btn:focus {
+  background: rgb(218, 45, 123);
+  
+
 }
